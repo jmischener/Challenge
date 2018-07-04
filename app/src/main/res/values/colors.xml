@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffe600</color>
+    <color name="colorPrimaryDark">#e4ce00</color>
+    <color name="colorPrimaryLight">#f9ea63</color>
+    <color name="colorAccent">#10123b</color>
+
+
+    <color name="colorBackground">#ffe600</color>
+
+    <!-- RESULT FRAGMENT -->
+    <color name="colorBackgroundResultItem">#ffffff</color>
+    <color name="colorBackgroundGrayMoreLight">#f1f1f1</color>
+    <color name="colorBackgroundGrayLight">#e4e4e4</color>
+    <color name="colorBackgroundGray">#bababa</color>
+    <color name="colorBackgroundGrayAlpha">#a3bababa</color>
+
+    <color name="colorTitleDark">#303030</color>
+    <color name="colorTitle">#383838</color>
+    <color name="colorTitleLight">#5a5a5a</color>
+    <color name="colorTitleVeryLight">#878787</color>
+    <color name="colorOriginalPrice">#8f0000</color>
+    <color name="colorShipping">#529c1e</color>
+    <color name="colorRate">#477601</color>
+</resources>

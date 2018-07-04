@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Mercado Challenge</string>
+
+    <!-- ************************** -->
+    <!-- ****** CHECK ACTIVITY **** -->
+    <!-- ************************** -->
+    <string name="location_permission">El permiso para acceder al GPS es utilizado para ubicar los productos cercanos a ti. En caso de querer utilizarlo habilitelo.</string>
+
+
+    <!-- ************************** -->
+    <!-- ***** RESULT ACTIVITY **** -->
+    <!-- ************************** -->
+    <string name="txt_searchview">Buscar en Mercado Challenge</string>
+    <string name="txt_ult_stock">¡Sólo hay %cant% en stock. Comprá cuanto antes!</string>
+    <string name="txt_cant_rate">%cant% cuotas sin interes</string>
+    <string name="txt_free_shipping">Envío GRATIS</string>
+    <string name="txt_empty_list">Todavia no hay búsquedas, ¿Qué esperas para encontrar lo que queres?</string>
+    <string name="txt_empty_list_item">En este momento no tenemos el producto que buscas. Pronto lo tendremos.</string>
+
+    <!-- ************************** -->
+    <!-- ****** ITEM ACTIVITY ***** -->
+    <!-- ************************** -->
+    <string name="txt_title_description">Descripción</string>
+    <string name="txt_cant_image">Foto %position% de %total%</string>
+    <string name="txt_buy_button">Para el próximo Challenge :)</string>
+    <string name="txt_tab_description">Descripción</string>
+    <string name="txt_tab_question">Preguntas</string>
+    <string name="txt_seller_by">por</string>
+    <string name="txt_condition_new">Producto Nuevo</string>
+    <string name="txt_condition_used">Producto Usado</string>
+    <string name="txt_warranty">Garantía: </string>
+    <string name="txt_no_warranty">Sin garantía </string>
+
+    <string name="txt_cant_sold_no">No se vendió ninguno aún. Se el primero.</string>
+    <string name="txt_cant_sold">Se vendieron %cant% productos.</string>
+    <string name="txt_cant_sold_one">Se vendió %cant% producto.</string>
+    <string name="txt_cant_available">¡Aún quedan %cant% en stock. Tené el tuyo! </string>
+
+    <!-- ************************** -->
+    <!-- ******* WEB SERVICES ***** -->
+    <!-- ************************** -->
+    <integer name="count_retry_connection">3</integer>
+
+
+    <!-- ************************** -->
+    <!-- ******* EXCEPTIONS ******* -->
+    <!-- ************************** -->
+    <string name="text_button_repeat">Reintentar</string>
+    <string name="text_button_open_settings">Abrir ajustes</string>
+    <string name="error_connection_failed">Hay problemas con la conexión</string>
+    <string name="error_server_failed">El servidor no responde</string>
+    <string name="error_undefined">Ups! Ocurrió un error inesperado</string>
+    <string name="error_login_failed">Usuario o contraseña incorrectos</string>
+    <string name="error_mora">Debe regularizar su deuda para acceder</string>
+    <string name="error_permission_storage">Debe conceder permisos de escritura a la aplicación</string>
+
+</resources>
+

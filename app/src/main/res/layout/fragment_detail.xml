@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorBackgroundGrayMoreLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:textAppearance="@style/MC.Theme.Item.Title"/>
+
+        <TextView
+            android:id="@+id/txtSellerName"
+            android:layout_below="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:textAppearance="@style/MC.Theme.Item.Seller"/>
+
+        <LinearLayout
+            android:id="@+id/llPrices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSellerName"
+            android:orientation="horizontal"
+            android:paddingTop="6dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_below="@+id/txtSellerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textAppearance="@style/MC.Theme.Item.Price"/>
+
+            <TextView
+                android:id="@+id/txtOriginalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="13dp"
+                android:textAppearance="@style/MC.Theme.Item.OriginalPrice"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@+id/llPrices"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="35dp"
+            android:background="@color/colorBackgroundGray" />
+
+        <RelativeLayout
+            android:id="@+id/llInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llPrices"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/imgInfo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_number"/>
+
+            <TextView
+                android:id="@+id/txtCantSold"
+                android:layout_toRightOf="@+id/imgInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textAppearance="@style/MC.Theme.Item.Quantity"/>
+
+            <TextView
+                android:id="@+id/txtCantAvailable"
+                android:layout_toRightOf="@+id/imgInfo"
+                android:layout_below="@+id/txtCantSold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textAppearance="@style/MC.Theme.Item.Quantity"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llInfo"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imgLocation"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_location"/>
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_toRightOf="@+id/imgLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:linksClickable="true"
+                android:textAppearance="@style/MC.Theme.Item.Location"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llFreeShipping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llLocation"
+            android:visibility="gone"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imgFreeShipping"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_ship_free"/>
+
+            <TextView
+                android:id="@+id/txtFreeShipping"
+                android:layout_toRightOf="@+id/imgFreeShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_free_shipping"
+                android:textAppearance="@style/MC.Theme.Item.Shipping"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llFreeShipping"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/imgCondition"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_info"/>
+
+            <TextView
+                android:id="@+id/txtCondition"
+                android:layout_toRightOf="@+id/imgCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textAppearance="@style/MC.Theme.Item.Condition"/>
+
+            <TextView
+                android:id="@+id/txtWarranty"
+                android:layout_toRightOf="@+id/imgCondition"
+                android:layout_below="@+id/txtCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textAppearance="@style/MC.Theme.Item.Condition"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/lineWarranty"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/llCondition"
+            android:layout_marginTop="15dp"
+            android:layout_height="1dp"
+            android:background="@color/colorBackgroundGray" />
+
+        <RelativeLayout
+            android:id="@+id/llDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineWarranty"
+            android:background="@color/colorBackgroundGrayLight"
+            android:backgroundTint="@color/colorBackgroundGrayLight">
+            <TextView
+                android:id="@+id/txtTitleDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/txt_title_description"
+                android:textAppearance="@style/MC.Theme.Item.Description.Title"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/lineDescription"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/llDescription"
+            android:layout_height="1dp"
+            android:background="@color/colorBackgroundGray" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_below="@+id/lineDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:textAppearance="@style/MC.Theme.Item.Description"/>
+
+    </LinearLayout>
+
+</ScrollView>

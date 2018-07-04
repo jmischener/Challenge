@@ -1,0 +1,218 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MC.Theme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/MC.Theme.ActionBar</item>
+    </style>
+
+    <style name="MC.Theme.ActionBar" parent="MC.Theme">
+        <item name="android:textStyle">normal</item>
+        <item name="android:titleTextStyle">@style/MC.Theme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MC.Theme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="MC.Theme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- CHECK ACTIVITY -->
+    <style name="MC.Theme.Check.Activity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!-- SEARCH ACTIVITY -->
+    <style name="MC.Theme.Search.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="MC.Theme.Search.Item.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleDark</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MC.Theme.Search.Item.Price" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+    <style name="MC.Theme.Search.EmptyText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorBackgroundGray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MC.Theme.Search.EmptyText.Small" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorBackgroundGray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <!-- RESULT ACTIVITY -->
+    <style name="MC.Theme.Result.Name" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleDark</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="MC.Theme.Result.Price" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MC.Theme.Result.OriginalPrice" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorOriginalPrice</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MC.Theme.Result.Stock" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorOriginalPrice</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="MC.Theme.Result.Rate" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorRate</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MC.Theme.Result.Shipping" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorShipping</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+    <!-- ITEM DESCRIPTION -->
+    <style name="MC.Theme.Item.Activity" parent="AppTheme">
+        <!--<item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>-->
+    </style>
+
+    <style name="MC.Theme.Item.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleDark</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="MC.Theme.Item.Condition" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleLight</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MC.Theme.Item.Seller" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleVeryLight</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MC.Theme.Item.Shipping" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorShipping</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="MC.Theme.Item.Location" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="MC.Theme.Item.Quantity" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MC.Theme.Item.Price" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">27sp</item>
+    </style>
+
+    <style name="MC.Theme.Item.OriginalPrice" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorOriginalPrice</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+
+    <style name="MC.Theme.Item.Description.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MC.Theme.Item.Description" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="MC.Theme.Item.CantImage" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleDark</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="MC.Theme.Item.Question" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MC.Theme.Item.Answer" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTitleLight</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MC.Theme.Item.Tab.Text" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="MC.Theme.Item.Tab" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MC.Theme.Item.Tab.Text</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMaxWidth">0dp</item>
+    </style>
+
+    <style name="MC.Theme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="MC.Theme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/colorPrimaryLight</item>
+    </style>
+
+
+
+</resources>
+
